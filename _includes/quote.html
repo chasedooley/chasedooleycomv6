@@ -1,0 +1,17 @@
+{% if include.cite %}
+<figure>
+  <blockquote>
+    <p>{{include.content}}</p>
+    <footer>
+      <cite>&mdash;{{include.cite}}</cite>
+    </footer>
+  </blockquote>
+</figure>
+{% else %}
+
+<figure>
+  <blockquote>
+    <p>{{include.content}}</p>
+  </blockquote>
+</figure>
+{% endif %}

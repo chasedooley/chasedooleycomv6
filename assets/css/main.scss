@@ -1,0 +1,250 @@
+---
+---
+
+@font-face {
+  font-family: Literata;
+  src: url("fonts/Literata-VariableFont_wght.ttf") format("truetype"),
+    url("fonts/static/Literata-Medium.ttf") format("truetype"),
+    url("fonts/static/Literata-SemiBold.ttf") format("truetype"),
+    url("fonts/static/Literata-Bold.ttf") format("truetype");
+  font-weight: 400 700;
+}
+
+@font-face {
+  font-family: Literata;
+  src: url("fonts/Literata-Italic-VariableFont_wght.ttf") format("truetype"),
+    url("fonts/static/Literata-MediumItalic.ttf") format("truetype"),
+    url("fonts/static/Literata-SemiBoldItalic.ttf") format("truetype"),
+    url("fonts/static/Literata-BoldItalic.ttf") format("truetype");
+  font-weight: 400 700;
+  font-style: italic;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --lead: 2.5rem;
+  --bg-color: #caf0f8;
+  --color: #03045e;
+  --accent: #00b4d8;
+}
+
+html {
+  font-size: 150%;
+
+  @media screen and (max-width: 42.5em) {
+    font-size: 112.5%;
+  }
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--color);
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 2rem;
+  box-sizing: border-box;
+  font-family: "Literata";
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: calc(3 * var(--lead));
+  font-weight: bold;
+  font-size: 80%;
+  @media screen and (max-width: 42.5em) {
+    justify-content: space-evenly;
+    font-size: 100%;
+  }
+}
+
+nav a {
+  border: 0;
+}
+
+nav .end a {
+  margin-left: 0.5rem;
+  @media screen and (max-width: 42.5em) {
+  }
+}
+
+article {
+  margin-bottom: calc(3 * var(--lead));
+  @media screen and (max-width: 42.5em) {
+    margin-bottom: calc(1.5 * var(--lead));
+  }
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 2.3rem;
+  margin: var(--lead) 0;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 550;
+}
+
+a {
+  color: var(--color);
+  text-decoration: none;
+  border-bottom: 2px solid var(--color);
+}
+
+a:hover,
+a:focus {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+p {
+  max-width: 720px;
+  /* margin-bottom: var(--lead); */
+}
+
+p + p {
+  text-indent: calc(1.25 * var(--lead));
+}
+
+div.tags {
+  margin-bottom: var(--lead);
+}
+
+ul.tags {
+  margin-bottom: var(--lead);
+  list-style: none;
+}
+
+ul li {
+  display: inline-block;
+}
+
+button {
+  background-color: var(--bg-color);
+  color: var(--color);
+  /* border: 2px solid var(--color); */
+  border: 2px solid var(--color);
+  padding: 10px;
+  font-size: 80%;
+  font-family: Literata;
+  margin: 0 10px 10px 0;
+  cursor: pointer;
+  @media screen and (max-width: 42.5em) {
+    font-size: 100%;
+  }
+}
+
+button.tag {
+  border-radius: 30px;
+}
+
+button:hover,
+button:focus,
+button.active {
+  border-color: var(--color);
+  color: var(--accent);
+  border-style: dashed solid;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.no-style {
+  list-style: none;
+}
+
+.no-style li {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #222;
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: 42.5em) {
+    display: block;
+  }
+}
+
+a h3 {
+  display: inline;
+  @media screen and (max-width: 42.5em) {
+    display: block;
+  }
+}
+
+ul a {
+  border: 0;
+}
+
+section {
+  padding-top: var(--lead);
+  margin-top: calc(1.5 * var(--lead));
+}
+
+details {
+  margin-bottom: var(--lead);
+}
+
+summary:hover {
+  cursor: pointer;
+  color: var(--accent);
+}
+
+summary:focus {
+  outline: none;
+  /* border: 2px solid var(--accent); */
+  color: var(--accent);
+}
+
+a:focus {
+  outline: none;
+}
+
+h1 + h2 {
+  font-style: italic;
+}
+
+/* Leaving off June 2, 2020 at 13:45
+- finish More about Chase
+- try filters on headshot
+- finish styling content elements: p, a, bq, code, hr
+- extra features and fill-ins
+- URL slug for filtering
+*/
+
+/* For June 5, 2020 
+[] Finish More about Chase
+[x] add URL slug for filtering
+[x] Port to Jekyll
+[x] Refine / finish styling for content elements
+[] Add features
+ - other stuff: Content for each tag
+*/
+
+/* For June 6, 2020 afternoon
+[x] Includes (figure)
+[~] Netlify CMS integration
+  - Base
+  - Editor widget(s)
+[~] Migrate content
+[] About me, description
+[] Preview, review, revise, publish
+*/

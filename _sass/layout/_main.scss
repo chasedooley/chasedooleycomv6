@@ -1,0 +1,6 @@
+main {
+  display: block;
+
+  @media screen and (min-width: #{ $max-width + 5 + 'em'}) {
+  }
+}

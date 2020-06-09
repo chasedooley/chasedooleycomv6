@@ -1,0 +1,17 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 625;
+  font-size: 80%;
+  padding-top: $leading_rem + rem;
+
+  @media screen and (max-width: 42.5em) {
+    justify-content: space-around;
+    font-size: 100%;
+  }
+}
+
+.start,
+.end {
+  margin: 0;
+}

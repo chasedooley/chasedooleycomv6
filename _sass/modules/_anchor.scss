@@ -1,0 +1,72 @@
+/* Links
+   ========================================================================== */
+
+$color-link-normal: $color-font-body;
+$color-link-hover: $color-font-light;
+$color-link-active: #f00;
+$color-link-visited: $color-font-body;
+
+a {
+  background: transparent;
+  color: $color-link-normal;
+  transition: all 0.1s;
+  text-decoration: none;
+
+  &:active,
+  &:hover {
+    outline: 0;
+  }
+
+  &:hover {
+    color: $color-link-hover;
+  }
+
+  &:visited {
+    color: $color-link-visited;
+
+    &:hover {
+      color: $color-link-hover;
+    }
+  }
+
+  &:active {
+    color: $color-link-active;
+  }
+}
+
+article a {
+  border-bottom: 2px solid $color-link-normal;
+
+  &:active,
+  &:hover {
+    outline: 0;
+  }
+
+  &:hover {
+    color: $color-link-hover;
+    border-color: $color-link-hover;
+  }
+
+  &:visited {
+    color: $color-link-visited;
+    border-color: $color-link-visited;
+
+    &:hover {
+      color: $color-link-hover;
+      border-color: $color-link-hover;
+    }
+  }
+
+  &:active {
+    color: $color-link-active;
+    border-color: $color-link-active;
+  }
+}
+
+.no-style a {
+  border: 0;
+}
+
+nav .end a {
+  margin-left: 0.5rem;
+}

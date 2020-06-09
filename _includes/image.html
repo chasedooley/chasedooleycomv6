@@ -1,0 +1,15 @@
+{% if include.right %}
+<figure class="floatRight">
+  <a href="/assets/img/{{include.img}}" target="_blank">
+    <img src="/assets/img/{{include.img}}" alt="{{include.content}}" />
+  </a>
+  <figcaption>{{include.content}}</figcaption>
+</figure>
+{% else %}
+<figure class="floatCenter">
+  <a href="/assets/img/{{include.img}}" target="_blank">
+    <img src="/assets/img/{{include.img}}" alt="{{include.content}}" />
+  </a>
+  <figcaption>{{include.content}}</figcaption>
+</figure>
+{% endif %}
